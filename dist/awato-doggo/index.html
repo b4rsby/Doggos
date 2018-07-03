@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='doggo'>
+<head>
+  <base href="https://b4rsby.github.io/Doggo/">  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doggo</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- DOGGO CSS -->
+  <link href="/css/style.css"/>
+
+  <!-- GOOGLE FONTS -->
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+  </style>
+
+
+  <!-- ANGULAR 1.5.8 -->
+
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js'></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.js"></script>
+ 
+  <!-- BOOTSRTAP 4, ANGULAR UI BINDINGS -->
+
+  <script src='/js/external/ui-bootstrap4/dist/ui-bootstrap-tpls.js' ></script>
+
+  <!-- DOGGO APP 0.1 -->
+
+  <script src='/js/app/app.module.js' ></script>
+  <script src='/js/app/app.config.js' ></script>
+
+  <!-- DOGGO APP - API SERVICE -->
+
+  <script src='/js/app/core/breedrunner/breedrunner.module.js' ></script>
+  <script src='/js/app/core/breedrunner/breedrunner.service.js' ></script>
+
+  <!-- DOGGO APP - NAV BAR -->
+
+  <script src='/js/app/utils/brand-nav/brand-nav.module.js' ></script>
+  <script src='/js/app/utils/brand-nav/brand-nav.directive.js' ></script>
+
+  <!-- DOGGO APP - INDEX LIST -->
+
+  <script src='/js/app/dog-list/dog-list.module.js' ></script>
+  <script src='/js/app/dog-list/dog-list.component.js' ></script>
+
+  <!-- DOGGO APP - PROFILE IMAGE LOAD -->
+
+  <script src='/js/app/directives/profileImage.js' ></script>
+
+  <!-- DOGGO APP - FORM -->
+
+  <script src='/js/app/breed-submit/breed-submit.module.js' ></script>
+  <script src='/js/app/breed-submit/breed-submit.component.js' ></script>
+
+  <script src='/js/app/utils/confirm-click/confirm-click.module.js' ></script>
+  <script src='/js/app/utils/confirm-click/confirm-click.directive.js' ></script>
+
+
+<link rel="stylesheet" href="styles.34c57ab7888ec1573f9c.css"></head>
+<body>
+  <brand-nav></brand-nav>
+  <div class='container'>
+    <div class='col-sm-12' ng-view>
+    </div>
+  </div>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.9c28303599d839a76e82.js"></script></body>
+</html>
+
+
+
+
+
+

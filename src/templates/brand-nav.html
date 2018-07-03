@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-expand-md navbar-light bg-faded fixed-top">
+
+   <a class="navbar-brand" href="#"><span class="mb-0 h1">Doggo</span></a> 
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <div ng-controller="ModalBreedCtrl as $ctrl" class="modal-breed">
+                   <button type="button" class="btn btn-default mr-auto" ng-click="$ctrl.open()">Add New</button>
+               </div>
+           </li>
+       </ul>
+    </div>
+</nav>

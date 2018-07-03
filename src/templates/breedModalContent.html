@@ -1,0 +1,55 @@
+      <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">Add a new Dog!</h3>
+        </div>
+        <div class="modal-body" id="modal-body" >
+              <div class='row'>
+            <div class='col-sm-12'>
+                
+                <form name="breedSubmit" ng-submit="$ctrl.ok(breedSubmit.$valid)" novalidate> 
+
+                <!-- BREED NAME -->
+                <div class="form-group">
+                      <label>Breed</label>
+                      <input type="text" name="name" class="form-control" ng-model="$ctrl.breedSubmit.name" required>
+                      <p ng-show="breedSubmit.name.$invalid && !breedSubmit.name.$pristine" class="help-block">A breed name is required.</p>
+                </div>
+
+                <!-- BREED DESCRIPTION-->
+                <div class="form-group">
+                      <label>Description</label>
+                      <input type="text" name="description" class="form-control" ng-model="$ctrl.breedSubmit.description" ng-minlength="3">
+                      <p ng-show="breedSubmit.description.$error.minlength" class="help-block">Breed description is too short.</p>
+                </div>
+
+                <!--SIZE -->
+                <div class="form-group">
+                  <label>Size</label>
+                  <select class="form-control" ng-model="$ctrl.breedSubmit.selectedSize" ng-options="item for item in $ctrl.breedSize" required></select>          
+                  <p ng-show="breedSubmit.selectedSize.$invalid && !breedSubmit.selectedSize.$pristine" class="help-block">A size is required.</p>    
+                </div>
+
+               <!-- MIN AGE DESCRIPTION-->
+               <div class="form-group">
+                     <label>Min Age</label>
+                     <input class="form-control" type="number" ng-model="$ctrl.breedSubmit.minAge" name="minAge" step="1" min="4" max="16"  ng-pattern="integerval" required> 
+                     <p ng-show="breedSubmit.minAge.$invalid && !breedSubmit.minAge.$pristine" class="help-block">A min age is required.</p>    
+                </div>
+
+               <!-- MAX AGE DESCRIPTION-->
+               <div class="form-group">
+                     <label>Max Age</label>
+                     <input class="form-control" type="number" ng-model="$ctrl.breedSubmit.maxAge" name="maxAge" step="1" min="5" max="20"  ng-pattern="integerval" required> 
+                     <p ng-show="breedSubmit.maxAge.$invalid && !breedSubmit.maxAge.$pristine" class="help-block">A max age is required.</p>    
+                </div>
+
+
+       <!-- SUBMIT BUTTON -->
+        <button type="submit" class="btn btn-primary" ng-disabled="breedSubmit.$invalid">Submit</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+
+    </form>
+
+            </div>
+        </div>
+
+        </div>
