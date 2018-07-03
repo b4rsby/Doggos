@@ -14,7 +14,7 @@ angular.module('doggo').directive('breedImage', function($http) {
 
 
           // remove spaces for image query, and appended dog to try narrow down false positives
-          let breedSearchQuery = value.breed.split(' ').join('+'); + '+dog' 
+          let breedSearchQuery = value.split(' ').join('+'); + '+dog' 
           // let breedId = value._id
    
             // Get the photos for the specified breed using the Search query
