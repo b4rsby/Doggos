@@ -10,11 +10,11 @@ angular.module('doggo').directive('breedImage', function($http) {
           scope.$watch(attrs.dogBreed, function(value) {
    
           // let's do nothing if the value comes in empty, null or undefined
-          if (value){
+          if (value.breed){
 
 
           // remove spaces for image query, and appended dog to try narrow down false positives
-          let breedSearchQuery = value.split(' ').join('+'); + '+dog' 
+          let breedSearchQuery = value.breed.split(' ').join('+'); + '+dog' 
           // let breedId = value._id
    
             // Get the photos for the specified breed using the Search query
