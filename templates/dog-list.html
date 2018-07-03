@@ -1,0 +1,42 @@
+
+<div class='row'>
+<div class='col-sm-6 col-sm-offset-3'>
+  <h1></h1>
+
+  <div class='row'>
+  
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="card-columns">
+
+<div ng-repeat="post in items track by $index">
+
+
+            <div class="card">
+      <breed-image dog-breed='{{ post }}'></breed-image>  
+      <div class="card-body">
+        <h5 class="card-title">{{ post.breed }}</h5>
+        <p class="card-text">
+          <p>Size: <span>{{post.size}}</span></p>
+          <p>Life Span: <span>{{post.lifespan}}</span></p>
+          <p>{{ post.description }}</p>
+          <p><a href='#' class='btn btn-sm btn-default' confirm-click='Do you want to delete breed?' confirmed-click='deleteBreed(post._id)'>Delete</a></p>
+        </p>
+      </div>
+</div>
+</div>
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+
